@@ -8,7 +8,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-                bat 'C:\\ProgramFiles\\dotnet\\dotnet.exe build'
+                bat 'C:\\Program Files\\dotnet\\dotnet.exe build'
             }
         }
         stage('Run') {
