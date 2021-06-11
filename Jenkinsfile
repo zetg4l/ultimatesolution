@@ -20,7 +20,7 @@ pipeline {
         stage('Clean') {
             steps {
                 echo 'Clean....'
-                bat "C:\\Program Files\\dotnet\\dotnet.exe clean"
+                bat 'C:\\"Program Files"\\dotnet\\dotnet.exe clean'
             }
         }
     }
