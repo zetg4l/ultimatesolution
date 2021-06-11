@@ -8,19 +8,19 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-                bat 'dotnet build'
+                bat 'C:\\Program Files\\dotnet\\dotnet.exe build'
             }
         }
         stage('Run') {
             steps {
                 echo 'Run..'
-                bat 'dotnet run'
+                bat 'C:\\Program Files\\dotnet\\dotnet.exe run'
             }
         }
         stage('Clean') {
             steps {
                 echo 'Clean....'
-                bat 'dotnet clean'
+                bat 'C:\\Program Files\\dotnet\\dotnet.exe clean'
             }
         }
     }
