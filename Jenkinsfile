@@ -2,13 +2,13 @@ pipeline {
     agent any
     environment 
     {
-        dotnet = '"C:\\Program Files\\dotnet\\dotnet.exe"'
+        dotnet = 'C:\\"Program Files"\\dotnet\\dotnet.exe'
     }
     stages {
         stage('Build') {
             steps {
                 echo 'Building..'
-                bat 'C:\\Program Files\\dotnet\\dotnet.exe build'
+                bat 'C:\\"Program Files:\\dotnet\\dotnet.exe build'
             }
         }
         stage('Run') {
